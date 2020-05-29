@@ -1,0 +1,90 @@
+body{
+    background-color: #091E42;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height:100vh;
+    margin:0;
+    padding:0;
+    transition:all 5s ease;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+.app-wrapper{
+    max-width:360px;
+    padding:64px 16px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .logo{
+        position:relative;
+        padding:0 15px;
+        margin-bottom:15px;
+        img{
+            max-width:100%;
+            margin-bottom:20px;
+        }
+        .progress{
+            position: absolute;
+            bottom:0;
+            left:0;
+            height:2px;
+            background-color: white;
+        }
+    }
+    button{
+        outline: none;
+        padding:10px 15px;
+        text-transform: uppercase;
+        font-size:12px;
+        background-color: transparent;
+        border:none;
+        color:white;
+        border-radius:7px;
+        z-index: 10;
+    
+    }
+}
+
+p{
+    font-size:12px;
+    position:fixed;
+    width:100%;
+    bottom:0;
+    text-align: center;
+    padding:15px;
+    color:rgba($color: white, $alpha: .8);
+}
+
+.github-fork-me{
+    width:80px;
+    height:80px;
+    position: absolute;
+    top:0;
+    right:0;
+    svg{
+        fill:#24292E; 
+        color:white; 
+    }
+    &:hover .octo-arm{
+        animation:octocat-wave 560ms ease-in-out;
+        transform-origin: 130px 106px;
+    }
+}
+
+
+@keyframes octocat-wave{
+    0%,100%{
+        transform:rotate(0);
+    }
+    20%,60%{transform:rotate(-25deg)}
+    40%,80%{transform:rotate(10deg)}
+}
+@media (max-width:500px){
+    .github-fork-me:hover .octo-arm{animation:none}
+    .github-fork-me .octo-arm{animation:octocat-wave 560ms ease-in-out}
+}

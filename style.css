@@ -1,0 +1,143 @@
+body {
+  background-color: #091E42;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: all 5s ease;
+  transition: all 5s ease;
+  font-family: 'Poppins', sans-serif;
+}
+
+.app-wrapper {
+  max-width: 360px;
+  padding: 64px 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.app-wrapper .logo {
+  position: relative;
+  padding: 0 15px;
+  margin-bottom: 15px;
+}
+
+.app-wrapper .logo img {
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+.app-wrapper .logo .progress {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  background-color: white;
+}
+
+.app-wrapper button {
+  outline: none;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  font-size: 12px;
+  background-color: transparent;
+  border: none;
+  color: white;
+  border-radius: 7px;
+  z-index: 10;
+}
+
+p {
+  font-size: 12px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+  padding: 15px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.github-fork-me {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.github-fork-me svg {
+  fill: #24292E;
+  color: white;
+}
+
+.github-fork-me:hover .octo-arm {
+  -webkit-animation: octocat-wave 560ms ease-in-out;
+          animation: octocat-wave 560ms ease-in-out;
+  -webkit-transform-origin: 130px 106px;
+          transform-origin: 130px 106px;
+}
+
+@-webkit-keyframes octocat-wave {
+  0%, 100% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  20%, 60% {
+    -webkit-transform: rotate(-25deg);
+            transform: rotate(-25deg);
+  }
+  40%, 80% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+}
+
+@keyframes octocat-wave {
+  0%, 100% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  20%, 60% {
+    -webkit-transform: rotate(-25deg);
+            transform: rotate(-25deg);
+  }
+  40%, 80% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+}
+
+@media (max-width: 500px) {
+  .github-fork-me:hover .octo-arm {
+    -webkit-animation: none;
+            animation: none;
+  }
+  .github-fork-me .octo-arm {
+    -webkit-animation: octocat-wave 560ms ease-in-out;
+            animation: octocat-wave 560ms ease-in-out;
+  }
+}
+/*# sourceMappingURL=style.css.map */
